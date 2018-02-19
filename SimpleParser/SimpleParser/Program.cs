@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace SimpleParser
 {
+
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("This will be a simple parser");
+            var parser = new Parser();
+            parser.Expr();
+            Console.WriteLine();
+            
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
